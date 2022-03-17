@@ -16,6 +16,10 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
+  selectedHeroMth(selected: Hero, forCheck: Hero | undefined): boolean {
+    return selected === forCheck;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
